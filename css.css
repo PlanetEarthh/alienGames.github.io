@@ -29,7 +29,7 @@ body{
 }
 .slide .bgdiv{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     animation: slide .8s ease;
