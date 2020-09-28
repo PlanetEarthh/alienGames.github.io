@@ -5,27 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameOcean</title>
+    <!-- css -->
     <link rel="stylesheet" href="./css.css" type="text/css">
+    <!-- fontawesome -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
 
     <div class="container">
+        <!-- navigation bar -->
+        <nav>
+            <div class="logo">LOGO</div>
+            
+            <div class="side-content">
+                <ul class="navbar">
+                    <li>
+                        <a href="#" class="submenu-btn">Games &triangledown;</a>
+                        <ul class="submenu">
+                            <li><a href="#">1]. Flappy Bird</a></li>
+                            <li><a href="#">2]. Bricks Battle</a></li>
+                            <li><a href="#">3]. Temple Run</a></li>
+                            <li><a href="#">4]. Snake War</a></li>
+                            <li><a href="#">5]. Poobg Mobili</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+        <!-- sidebar -->
+        <div class="sidebar">
+
+            <div class="name">
+                <h4>MY NAV</h4>
+                <div class="close-btn">
+                    &times;
+                </div>
+            </div>
+            <div class="sidenav">
+                <ul>
+                    <a href="#"><li>Home <i class='fas fa-home' style='font-size:20px'></i></li></a>
+                    <a href="#"><li>Services <i class='fab fa-accessible-icon' style='font-size:20px'></i></li></a>
+                    <a href="#"><li>About <i class='fas fa-address-book sidebar-icon' style='font-size:20px'></i></li></a>
+                    <a href="#"><li>Contact <i class="fa fa-phone" style="font-size:20px"></i></li></a>
+                    <a href="#"><li>Help <i class='fab fa-github' style='font-size:20px'></i></li></a>
+                </ul>
+                <p>Thank You...Visit Again :)</p>
+            </div>
+
+        </div>
+
         <div class="slider">
 <!-- slide 1 -->
             <div class="slide slide1 active">
-                <div class="bgdiv" style="background: url('./flappyBird/Flappy Bird.png') center no-repeat;background-size: cover">
-                <nav>
-                    <ul class="navbar">
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Services</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="#"><li>Feedback</li></a>
-                        <a href="#"><li class="logout">Logout</li></a>
-                    </ul>
-                </nav>
-
+                <div class="bgdiv" style="background: url('./flappyBird/Flappy\ Bird.png');background-size: 100% 100%;">
                 <div class="content">
                     <section class="caption">
                             <h1>1. Flappy Bird</h1>
@@ -33,9 +73,10 @@
                             <a href="./flappyBird/flappyBird.html">Play Now</a>
                     </section>
                 </div>
+                    <a href="#bottom-content"><i class='fas fa-long-arrow-alt-down' id="down-arrow"></i></a>
                 </div>
-                <div class="bottom-content">
-                    <center><h1>Info About Game</h1></center>
+                <div class="bottom-content" id="bottom-content">
+                    <center><h1>Info About Game 1</h1></center>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellendus magnam totam quibusdam voluptatum vitae quo laboriosam! Sed, inventore quis eos, omnis eveniet voluptas, quia praesentium sit iste iure accusamus est culpa totam. Magni sunt asperiores facere, voluptatibus similique atque quos perferendis ipsa est quae, nobis odio, distinctio nisi dolores veniam ad eligendi incidunt praesentium. Laboriosam commodi est temporibus suscipit odio nisi impedit praesentium, dolorum laudantium ea eos tempore, consectetur repudiandae esse cumque sunt modi deserunt dolorem debitis expedita quisquam. Dolorum, autem animi aut obcaecati officiis saepe repudiandae, laudantium sapiente non nam ipsam, odio unde totam eos facilis voluptates sint.</p>
                 </div>
             </div>
@@ -43,17 +84,7 @@
 
 <!-- slide 2 -->
             <div class="slide slide2">
-                <div class="bgdiv" style="background: url('./images/img2.jpg') center no-repeat;background-size: cover">
-                <nav>
-                    <ul class="navbar">
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Services</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="#"><li>Feedback</li></a>
-                        <a href="#"><li class="logout">Logout</li></a>
-                    </ul>
-                </nav>
+                <div class="bgdiv" style="background: url('./images/img2.jpg');background-size: 100% 100%">
 
                 <div class="content">
                     <section class="caption">
@@ -64,7 +95,7 @@
                 </div>
                 </div>
                 <div class="bottom-content">
-                    <center><h1>Info About Game</h1></center>
+                    <center><h1>Info About Game 2</h1></center>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellendus magnam totam quibusdam voluptatum vitae quo laboriosam! Sed, inventore quis eos, omnis eveniet voluptas, quia praesentium sit iste iure accusamus est culpa totam. Magni sunt asperiores facere, voluptatibus similique atque quos perferendis ipsa est quae, nobis odio, distinctio nisi dolores veniam ad eligendi incidunt praesentium. Laboriosam commodi est temporibus suscipit odio nisi impedit praesentium, dolorum laudantium ea eos tempore, consectetur repudiandae esse cumque sunt modi deserunt dolorem debitis expedita quisquam. Dolorum, autem animi aut obcaecati officiis saepe repudiandae, laudantium sapiente non nam ipsam, odio unde totam eos facilis voluptates sint.</p>
                 </div>
             </div>
@@ -72,17 +103,7 @@
 
 <!-- slide 3 -->
             <div class="slide slide3">
-                <div class="bgdiv" style="background: url('./images/img3.jpg') center no-repeat;background-size: cover">
-                <nav>
-                    <ul class="navbar">
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Services</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="#"><li>Feedback</li></a>
-                        <a href="#"><li class="logout">Logout</li></a>
-                    </ul>
-                </nav>
+                <div class="bgdiv" style="background: url('./images/img3.jpg') center no-repeat;background-size: 100% 100%">
 
                 <div class="content">
                     <section class="caption">
@@ -93,7 +114,7 @@
                 </div>
                 </div>
                 <div class="bottom-content">
-                    <center><h1>Info About Game</h1></center>
+                    <center><h1>Info About Game 3</h1></center>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellendus magnam totam quibusdam voluptatum vitae quo laboriosam! Sed, inventore quis eos, omnis eveniet voluptas, quia praesentium sit iste iure accusamus est culpa totam. Magni sunt asperiores facere, voluptatibus similique atque quos perferendis ipsa est quae, nobis odio, distinctio nisi dolores veniam ad eligendi incidunt praesentium. Laboriosam commodi est temporibus suscipit odio nisi impedit praesentium, dolorum laudantium ea eos tempore, consectetur repudiandae esse cumque sunt modi deserunt dolorem debitis expedita quisquam. Dolorum, autem animi aut obcaecati officiis saepe repudiandae, laudantium sapiente non nam ipsam, odio unde totam eos facilis voluptates sint.</p>
                 </div>
             </div>
