@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95397bdd-4d6f-4fdb-99bf-2b9f16e4038b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/alienGames.github.io.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/Build/UnityLoader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/Build/Webgl.data.unityweb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/Build/Webgl.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/Build/Webgl.wasm.code.unityweb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/Build/Webgl.wasm.framework.unityweb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/Flappy Bird.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/UnityProgress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/fullscreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/progressEmpty.Dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/progressEmpty.Light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/progressFull.Dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/progressFull.Light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/progressLogo.Dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/progressLogo.Light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/TemplateData/webgl-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flappyBird/flappyBird.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -46,6 +25,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/flappyBird" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -61,7 +41,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601237567272</updated>
-      <workItem from="1601237568369" duration="626000" />
+      <workItem from="1601237568369" duration="1599000" />
+      <workItem from="1601286397390" duration="3773000" />
     </task>
     <servers />
   </component>

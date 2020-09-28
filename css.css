@@ -28,7 +28,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: whitesmoke;
+    background: black;
     border: 2px solid goldenrod;
     position: sticky;top: 0%;
     z-index: 3;
@@ -36,6 +36,7 @@ nav{
 nav .logo{
     text-align: center;
     font-size: 1.5rem;
+    color: #25b360;
 }
 nav .side-content{
     width: 40vw;
@@ -52,7 +53,7 @@ nav .side-content{
 }
 .side-content .navbar a{
     font-size: 1rem;
-    color: #333;
+    color: white;
 }
 /* sub-menu */
 .submenu-btn{
