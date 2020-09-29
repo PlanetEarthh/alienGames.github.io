@@ -16,9 +16,29 @@
     <div class="container">
         <!-- navigation bar -->
         <nav>
+            <!-- logo -->
             <div class="logo">LOGO</div>
             
             <div class="side-content">
+                 <!-- search box -->
+                 <div class="search-box">
+                    <input type="text" placeholder="Are you lost baby-girl?" class="search-txt" onkeyup="myFunction()">
+                    <a href="#" class="search-icon">
+                        S
+                    </a>
+                <!-- search results -->
+                <div class="search-result">           
+                    <ul id="myUL">
+                        <li><a href="#">Flappy Bird</a></li>
+                        <li><a href="#">Temple Run</a></li>
+                        <li><a href="#">Bricks Battle</a></li>
+                        <li><a href="#">How to impress new admission girl</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>             
+                </div>
+
+                <!-- dropdown menu (game categories) -->
                 <ul class="navbar">
                     <li>
                         <a href="#" class="submenu-btn">Games &triangledown;</a>
@@ -29,10 +49,10 @@
                             <li><a href="#">4]. Snake War</a></li>
                             <li><a href="#">5]. Poobg Mobili</a></li>
                         </ul>
-                    </li>
-                    
+                    </li>                  
                 </ul>
 
+                <!-- hamburger menu -->
                 <div class="hamburger">
                     <div></div>
                     <div></div>
@@ -40,6 +60,8 @@
                 </div>
             </div>
         </nav>
+
+
         <!-- sidebar -->
         <div class="sidebar">
 
@@ -54,8 +76,8 @@
                     <a href="#"><li>Home <i class='fas fa-home' style='font-size:20px'></i></li></a>
                     <a href="#"><li>Services <i class='fab fa-accessible-icon' style='font-size:20px'></i></li></a>
                     <a href="#"><li>About <i class='fas fa-address-book sidebar-icon' style='font-size:20px'></i></li></a>
-<!--                    <a href="#"><li>Contact <i class="fa fa-phone" style="font-size:20px"></i></li></a>-->
-                    <a href="#"><li>Contribute <i class='fab fa-github' style='font-size:20px'></i></li></a>
+                    <a href="#"><li>Contact <i class="fa fa-phone" style="font-size:20px"></i></li></a>
+                    <a href="#"><li>Help <i class='fab fa-github' style='font-size:20px'></i></li></a>
                 </ul>
                 <p>Thank You...Visit Again :)</p>
             </div>
@@ -65,12 +87,12 @@
         <div class="slider">
 <!-- slide 1 -->
             <div class="slide slide1 active">
-                <div class="bgdiv" style="background: url('./flappyBird/Flappy\ Bird.png');background-size: 100% 100%;">
+                <div class="bgdiv" style="background: url('./images/img4.jpg');background-size: 100% 100%;">
                 <div class="content">
                     <section class="caption">
                             <h1>1. Flappy Bird</h1>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <a href="./flappyBird/flappyBird.html">Play Now</a>
+                            <a href="#" class="play-now">Play Now</a>
                     </section>
                 </div>
                     <a href="#bottom-content"><i class='fas fa-long-arrow-alt-down' id="down-arrow"></i></a>
@@ -84,13 +106,13 @@
 
 <!-- slide 2 -->
             <div class="slide slide2">
-                <div class="bgdiv" style="background: url('./FPS-Survival/Fps.png');background-size: 100% 100%">
+                <div class="bgdiv" style="background: url('./images/img2.jpg');background-size: 100% 100%">
 
                 <div class="content">
                     <section class="caption">
-                            <h1>First Person Shooter</h1>
+                            <h1>2. Bricks Battle</h1>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <a href="FPS-Survival/index.html">Play Now</a>
+                            <a href="#" class="play-now">Play Now</a>
                     </section>
                 </div>
                 </div>
@@ -109,7 +131,7 @@
                     <section class="caption">
                             <h1>3. Temple Run</h1>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <a href="#">Play Now</a>
+                            <a href="#" class="play-now">Play Now</a>
                     </section>
                 </div>
                 </div>

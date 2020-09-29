@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     scroll-behavior: smooth;
 }
 body{
@@ -28,7 +29,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
+    background: whitesmoke;
     border: 2px solid goldenrod;
     position: sticky;top: 0%;
     z-index: 3;
@@ -36,15 +37,14 @@ nav{
 nav .logo{
     text-align: center;
     font-size: 1.5rem;
-    color: #25b360;
 }
 nav .side-content{
-    width: 40vw;
+    width: 45vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: .2rem 1rem;
-    /* background: rgba(102, 51, 153, 0.397); */
+    /* background: #25b360; */
 }
 .side-content .navbar{
     display: flex;
@@ -53,8 +53,9 @@ nav .side-content{
 }
 .side-content .navbar a{
     font-size: 1rem;
-    color: white;
+    color: #333;
 }
+
 /* sub-menu */
 .submenu-btn{
     position: relative;
@@ -91,6 +92,77 @@ nav .side-content{
 .submenu li:hover::after{
     width: 80%;
 }
+/* search box */
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#2f3640;
+    border-radius: 35px;
+    padding: .3rem;
+    padding-left: 0;
+}
+.search-box > input{
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: .9rem;
+    margin-left: .5rem;
+    transition: .5s;
+    width: 0;
+}
+.search-box:hover > input{
+    width: 200px;
+}
+.search-box .search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem .6rem;
+    border-radius: 50%;
+    font-size: .9rem;
+    background:#2f3640;
+    color:#e84118;
+    cursor: pointer;
+    transition: .3s;
+}
+.search-box:hover > .search-icon{
+    background: whitesmoke;
+}
+/* search result */
+.search-result{
+    position: absolute;
+    top: 9vh;
+    right: 0%;
+    width: 40%;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 4px;
+    padding: 1rem 0;
+    transition: .3s;
+    transform: translateX(100%);
+}
+/* see the search results on hovering the search button */
+.search-box:hover .search-result{
+    transform: translateX(0%);
+}
+.search-result #myUL{
+    text-align: center;
+}
+.search-result #myUL li{
+    margin: 1rem 0 1rem 0;
+    display: block;
+    border-bottom: 1px solid #777;
+}
+.search-result #myUL li:nth-child(1){margin-top: 0;}
+.search-result #myUL li:last-child{margin-bottom: 0;}
+
+.search-result #myUL li a{
+    color: #333;
+    font-size: 1rem;
+}
+
 /* hamburger-menu */
 .side-content .hamburger{
     width: 2.5rem;
@@ -128,6 +200,7 @@ nav .side-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.623);
 }
 .sidebar .name h4{
     font-size: 1.4rem;
@@ -181,7 +254,6 @@ nav .side-content{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
     animation: slide .8s ease;
 }
 @keyframes slide{
@@ -224,12 +296,34 @@ nav .side-content{
     animation: text_ani .5s ease forwards;
     animation-delay: .2s;
 }
-.caption a{
+.caption .play-now{
     font-size: 1rem;
     background: #333;
     color: rgb(241, 234, 234);
     padding: .4rem 1rem;
     letter-spacing: 2px;
+    transition: .4s;
+    position: absolute;
+    overflow:hidden;
+}
+.play-now:hover{
+    color: rgb(240, 230, 230);
+    background-color: royalblue;
+    border: none;
+}
+.play-now::before{
+    content: "";
+    width: 100%;
+    height: 20%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%) rotate(50deg);
+    transition: .7s;
+}
+.play-now:hover::before{
+    transform: translateX(100%) rotate(50deg);
 }
 .slide.active .caption a{
     opacity: 0;
@@ -305,4 +399,9 @@ nav .side-content{
     50%{
         transform: translateX(7px);
     }
+}
+
+/* bottom content of every slide */
+.bottom-content{
+    margin-top: 1rem;
 }
