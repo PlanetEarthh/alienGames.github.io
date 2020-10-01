@@ -1,29 +1,32 @@
 const slides = document.querySelector(".slider").children;
 const prev_btn = document.querySelector(".pre");
 const next_btn = document.querySelector(".next");
+const slideIndicator = document.querySelector(".slideIndicator");
 const submenu_btn = document.querySelector(".submenu-btn");
 const submenu = document.querySelector(".submenu");
 const burger = document.querySelector(".hamburger");
 const sidebar = document.querySelector(".sidebar");
 const close_btn = document.querySelector(".close-btn");
 
-
 // slides
+let slideLength = 3; //totalno of slides
 let index = 0;
 
 prev_btn.addEventListener("click", ()=>{
     previousSlide();
+    UpdateIndicatorBtns();
     resetTimer();
 });
 
 next_btn.addEventListener("click", ()=>{
     nextSlide();
+    UpdateIndicatorBtns();
     resetTimer();
 });
 
 function previousSlide(){
     if(index==0){
-        index =slides.length-1;
+        index =slideLength-1;
     }
     else{
         index--;
@@ -32,7 +35,7 @@ function previousSlide(){
 }
 
 function nextSlide(){
-    if(index == slides.length-1){
+    if(index == slideLength-1){
         index = 0;
     }
     else{
@@ -42,7 +45,7 @@ function nextSlide(){
 }
 
 function changeSlide(){
-    for(let i=0; i<slides.length;i++){
+    for(let i=0; i<slideLength;i++){
         slides[i].classList.remove("active");
     }
     slides[index].classList.add("active");
@@ -56,10 +59,41 @@ function resetTimer(){
 
 function autoplay(){
     nextSlide();
+    UpdateIndicatorBtns();
 }
-
 let autoplay_interval = setInterval(autoplay, 9000);
 
+// slide indicators
+function IndicatorBtns(){
+    for(let i=0; i<3; i++){
+        const div = document.createElement("div");
+        div.innerHTML = i+1;
+        div.setAttribute("onclick", "slideIndicatorfunc(this)");
+        div.id = i;
+        if(i==0){
+            div.className = "active";
+        }
+        slideIndicator.appendChild(div);
+
+    }
+}
+IndicatorBtns();
+
+// on click to indicator btn changeSlide
+function slideIndicatorfunc(ele){
+    index = ele.id;
+    changeSlide();
+    UpdateIndicatorBtns();
+    resetTimer();
+}
+
+
+function UpdateIndicatorBtns(){
+    for(let i = 0; i< slideIndicator.children.length; i++){
+        slideIndicator.children[i].classList.remove("active");
+    }
+    slideIndicator.children[index].classList.add("active");
+}
 
 // Submenu
 submenu_btn.addEventListener("click", ()=>{

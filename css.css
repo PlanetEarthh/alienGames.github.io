@@ -400,6 +400,33 @@ nav .side-content{
     }
 }
 
+/* slide indicators */
+.slideIndicator{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.slideIndicator div{
+    width: 1.5rem;
+    padding: .4rem;
+    margin-left: 4px;
+    border-radius: 30px;
+    font-size: .7rem;
+    font-weight: bolder;
+    color: #333;
+    background: #28c268;
+    text-align: center;
+    transition: .3s;
+    display: inline-block;
+    cursor: pointer;
+}
+.slideIndicator div.active{
+    display: inline-block;
+    background: #fff;
+}
+
 /* bottom content of every slide */
 .bottom-content{
     margin-top: 1rem;
