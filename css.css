@@ -69,7 +69,7 @@ nav .side-content{
     transition: .2s;
     transform: translateY(-200%);
 }
-/* javascript class to show submenu on mousehover */
+/* javascript class to show submenu on click */
 .submenu.showSubmenu{
     transform: translateY(0);
 }
@@ -112,7 +112,7 @@ nav .side-content{
     transition: .5s;
     width: 0;
 }
-.search-box:hover > input{
+ .search-box:hover > input{
     width: 200px;
 }
 .search-box .search-icon{
@@ -141,12 +141,9 @@ nav .side-content{
     border-radius: 4px;
     padding: 1rem 0;
     transition: .3s;
-    transform: translateX(100%);
+    display: none;
 }
-/* see the search results on hovering the search button */
-.search-box:hover .search-result{
-    transform: translateX(0%);
-}
+
 .search-result #myUL{
     text-align: center;
 }
@@ -272,6 +269,7 @@ nav .side-content{
 .slide .bgdiv .content{
     background: rgba(80, 78, 78, 0.404);
     width:60%;
+    height: 20%;
     margin:auto;
 }
 .slide .bgdiv .content .caption{
@@ -295,6 +293,7 @@ nav .side-content{
     opacity: 0;
     animation: text_ani .5s ease forwards;
     animation-delay: .2s;
+    position: relative;
 }
 .caption .play-now{
     font-size: 1rem;
@@ -303,8 +302,8 @@ nav .side-content{
     padding: .4rem 1rem;
     letter-spacing: 2px;
     transition: .4s;
-    position: absolute;
     overflow:hidden;
+    position: absolute;
 }
 .play-now:hover{
     color: rgb(240, 230, 230);
@@ -315,9 +314,9 @@ nav .side-content{
     content: "";
     width: 100%;
     height: 20%;
-    background: white;
+    background: #fff;
     position: absolute;
-    top: 0;
+    top: 0%;
     left: 0;
     transform: translateX(-100%) rotate(50deg);
     transition: .7s;
@@ -341,7 +340,7 @@ nav .side-content{
     }
 }
 /* arrow down */
-#down-arrow{
+/* #down-arrow{
     font-size: 8rem;
     color: crimson;
     margin: 0 auto;
@@ -358,7 +357,7 @@ nav .side-content{
     75%{bottom: 2%;}
     90%{bottom: 1%;}
     100%{bottom: 0%;}
-}
+} */
 
 /* buttons */
 .container .buttons .pre,

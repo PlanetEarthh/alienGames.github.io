@@ -13,10 +13,12 @@ let index = 0;
 
 prev_btn.addEventListener("click", ()=>{
     previousSlide();
+    resetTimer();
 });
 
 next_btn.addEventListener("click", ()=>{
     nextSlide();
+    resetTimer();
 });
 
 function previousSlide(){
@@ -46,6 +48,17 @@ function changeSlide(){
     slides[index].classList.add("active");
 }
 
+// auto play slides
+function resetTimer(){
+    clearInterval(autoplay_interval);
+    autoplay_interval = setInterval(autoplay, 9000);
+}
+
+function autoplay(){
+    nextSlide();
+}
+
+let autoplay_interval = setInterval(autoplay, 9000);
 
 
 // Submenu
@@ -84,24 +97,50 @@ close_btn.addEventListener("click", ()=>{
     sidebar.classList.remove("show-sidebar");
 });
 
+
 // search bar script
-function myFunction() {
-      let input, filter, ul, li, a, i, txtValue;
-      input = document.querySelector('.search-txt');
-      filter = input.value.toUpperCase();
-      ul = document.getElementById("myUL");
-      li = ul.getElementsByTagName('li');
-    
-      for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          li[i].style.display = "";
-        } else {
-          li[i].style.display = "none";
-        }
+
+function myFunction()
+{
+    let input, filter, ul, li, a, i, txtValue, search_results;
+
+    input = document.querySelector('.search-txt');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
       }
     }
+
+    // showing search results with javascript
+    search_results = document.querySelector(".search-result");
+    search_results.style.display = "block";
+
+    search_results.addEventListener("mouseleave", ()=>{
+        search_results.style.display = "none";
+    });
+
+    if(input.value != ""){
+        search_results.style.display = "block";
+    }
+    else{
+        search_results.style.display = "none";
+    }
+
+    let anywhere = document.querySelectorAll(".slide");
+    anywhere.forEach(item => {
+        item.addEventListener("mouseenter", ()=>{
+            search_results.style.display = "none";
+        });
+    });
+}
 
 
 
