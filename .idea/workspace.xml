@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95397bdd-4d6f-4fdb-99bf-2b9f16e4038b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sile3.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,8 @@
       <workItem from="1601237568369" duration="1599000" />
       <workItem from="1601286397390" duration="3875000" />
       <workItem from="1601371515773" duration="1192000" />
-      <workItem from="1601468519462" duration="2162000" />
+      <workItem from="1601468519462" duration="4486000" />
+      <workItem from="1601476265055" duration="690000" />
     </task>
     <servers />
   </component>
@@ -59,5 +57,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="672" y="416" width="555" height="272" key="#Updates" timestamp="1601476305297">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="672" y="416" width="555" height="272" key="#Updates/0.25.1920.1055@0.25.1920.1055" timestamp="1601476305297" />
   </component>
 </project>
